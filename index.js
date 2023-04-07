@@ -92,6 +92,7 @@ async function downloadFile(authClient) {
   }
   const fileId = process.argv[4];
   const filename = process.argv[3];
+  const fs = require('fs')
   var dest = fs.createWriteStream(filename);
   drive.files.watch
   drive.files.get({fileId: fileId, alt: 'media'}, {responseType: 'stream'},
