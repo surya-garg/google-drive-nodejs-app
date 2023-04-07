@@ -43,13 +43,21 @@ To execute the app and perform the above tasks, follow these simple steps:
     1. For listing files - 
     
         ```node index.js listFiles```
+        
+        Sample response - ![alt text](https://github.com/surya-garg/google-drive-nodejs-app/blob/main/listFilesResponse.png)
+        
     2. For downloading a file - 
     
         ```node index.js downloadFile <filename> <fileid>```
         
         fileid can be gotten from the result of listFiles api as it lists files with filenames and fileids.
+        
+        Sample response - ![alt text](https://github.com/surya-garg/google-drive-nodejs-app/blob/main/downloadFileResponse.png)
+        
     3. For listing users who have permission to access a given file - 
     
         ```node index.js filePermissions <fileid> ```
         
         fileid can be gotten from the result of listFiles api as it lists files with filenames and fileids.
+        
+        Sample response - ![alt text](https://github.com/surya-garg/google-drive-nodejs-app/blob/main/filePermissionsResponse.png)
